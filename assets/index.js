@@ -1,36 +1,30 @@
 
-const startButton = document.querySelector('#rect-start') // seleziono il bottone
-const rectElement = document.querySelector('.rect')
-startButton.addEventListener('click', function () {
-  // devo aggiungere/togliere la classe "rect-animated" dall'elemento!
-  rectElement.classList.toggle('rect-animated')
-})
+const startButton = document.querySelector(".animation") // seleziono il bottone
 
-// just for fun aggiungiamo un console.log alla fine dell'animazione :)
-rectElement.addEventListener('animationend', function (e) {
-  console.log('animation ended', e)
-})
 
 document.addEventListener('scroll', function (e) {
   console.log(window.scrollY)
 
-  if (window.scrollY > 50) {
-    rectElement.classList.add('animated')
-  }})
+  if (window.scrollY ===400 ||window.scrollY >400) {
+startButton.style.backgroundColor="#1A8917"
+
+  }
+else if (window.scrollY<400){
+startButton.style.backgroundColor="#191919"
+}
+})
 
 
+const nav = document.querySelector("nav")
 
+document.addEventListener('scroll', function (e) {
+ 
 
+  if (window.scrollY ===400 ||window.scrollY >400) {
+nav.style.backgroundColor="white"
 
-
-
-
-
-
-
-// document.addEventListener('scroll', function (e) {
-//     console.log(window.scrollY)
-//     if (window.scrollY > 110) {
-//       rectElement.classList.add('rect-animated')
-//     }
-//   })
+  }
+else if (window.scrollY<400){
+nav.style.backgroundColor="#ffc017"
+}
+})

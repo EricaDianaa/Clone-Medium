@@ -1,6 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&family=Indie+Flower&family=Montserrat:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap');
 
 
+/* GENERALI */
+p,button{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    margin-top: 70px;
+font-size: 7em;
+margin-bottom: 50px;
+
+}
+
+p{
+    color: gray;
+}
+
+h3{
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
 /* NAV BAR*/
 nav{
 background-color: #ffc017;
@@ -8,7 +29,6 @@ display: flex;
 width: 100%;
 border-bottom: 1px solid;
 height: 75PX;
-justify-content: center;
 position: fixed;
 margin: 0 0 50px 0;
 padding: 10px 0;
@@ -17,9 +37,9 @@ font-family: 'Spectral', serif;
 }
 nav ul{
     display: flex;
-   justify-content: space-around;
-margin-left: 25%;
-  width: 100%;
+   justify-content: space-evenly;
+margin-left: 50%;
+  width: 30%;
   align-items: center;
 }
 
@@ -27,16 +47,16 @@ li{
     list-style-type: none;
 }
 nav button{
+    display: flex;
+    align-items: center;
     height: 30px;
-    width: 350px;
-    margin-right: 10%;
+   
     background-color: #191919;
     color: white;
     border-radius: 20px;
-    margin-top: 23px;
 }
 nav img{
-    margin-left: 10px ;
+    margin-left: 90px ;
     align-self: center;
 height: 25px;
 }
@@ -52,19 +72,13 @@ height: 25px;
     width: 100%;
     margin-left: 100px;
 }
-h1{
-    margin-top: 70px;
-font-size: 7em;
-margin-bottom: 50px;
-/* font-weight: bold; */
-}
+
 header{
     font-family: 'Spectral', serif;
 height: 455px;
 width: 100%;
     background-color: #ffc017;
     display: flex;
-   /* flex-direction: column; */
    justify-content: end;
  position: relative;
  top: 95px;
@@ -86,9 +100,7 @@ header p{
     margin-bottom: 50px;
     color: black;
 }
-header img{
 
-}
 .m{
  display: flex;
 width: 1000px;
@@ -98,14 +110,6 @@ justify-content: end;
 
 }
 
-p,button{
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-}
-
-p{
-    color: gray;
-}
 
 /* SECTION 1 */
 .number1{
@@ -115,6 +119,11 @@ p{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.stelle{
+display: flex;
+align-items: center;
+} 
 .sec{
     width: 30%;
     height: 200px;
@@ -125,21 +134,23 @@ p{
   
 }
 
-
 .sec img{
-width: 30px;
-border-radius: 10px;
+width: 20px;
+border-radius: 5px;
 }
 
-.num{
+.num {
   display: flex;
   height: 55%;
   width: 20%;
   flex-direction: row;
-justify-content: start;
-    color: lightgray;
+  justify-content: start;
+  
      font-size: 1.5em;
     font-weight: bold ;
+}
+.num p{
+    color: #E6E6E6 !important;
 }
 .text h3{
     display: flex;
@@ -156,6 +167,9 @@ justify-content: start;
 
 color: black;
 
+}
+.p1 p{
+margin-left: 100px;
 }
 
 /* SECTION2 */
@@ -212,6 +226,7 @@ width: 500px;
 margin: 10px;
 justify-content: center;
 border-bottom: 1px solid gray;
+padding-bottom: 40px;
 
 }
 
@@ -235,21 +250,18 @@ margin: 5px;
 
 .footer{
     position: sticky;
-    top: 20px;
-
+    top: 100px;
+height: 100%;
 }
 
 
 
-h3{
-    font-size: 1.2em;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
+
 .text1{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 500px;
 }
 .text1 button{
     border-radius: 16px;
@@ -266,35 +278,34 @@ h3{
     margin: 5px;
 }
 
+.star{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.star img{
+    width: 20px;
+  
+}
+
+.icona{
+display: flex;
+justify-content: end;
+position: absolute;
+left: 500px;
+}
+
+
+.star p {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 
 
+/* .new{
+    color: #1A8917;
+}
+  */
 
-
-
-
-
-
-
-
-
-
-@keyframes animationscroll {
-    0% {
-        nav{
-            background-color: #ffc017; 
-        }
-       
-    }
-    100% {
-       background-color: white;
-     button{
-        background-color: #1A8917;
-     }
-    }
-  }
-
-  .animated {
-    animation: animationscroll 6s ease-in 1s infinite;
-  }
 
